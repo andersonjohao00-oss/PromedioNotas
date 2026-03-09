@@ -1,0 +1,27 @@
+package com.mycompany.promedionotas;
+
+/**
+ *
+ * @author Usuario
+ */
+public class PromedioNotas {
+
+    public static void main(String[] args) {
+
+        double primerExamen = 8.5;
+        double segundoExamen = 9.0;
+
+        double promedioFinal = calcularPromedio(primerExamen, segundoExamen);
+
+        System.out.println("Reporte de Calificaciones:");
+        System.out.println("Nota 1: " + primerExamen);
+        System.out.println("Nota 2: " + segundoExamen);
+        System.out.println("El promedio final es: " + promedioFinal);
+    }
+    public static double calcularPromedio(double n1, double n2) {
+        
+        double resultado = (n1 + n2) / 2;
+
+        return resultado;
+    }
+}
